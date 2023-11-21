@@ -87,7 +87,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 loss_list = []
 
 # 训练模型
-for epoch in range(17):
+for epoch in range(30):
 # for epoch in range(1):
 # if False:
     print('epoch ', epoch, flush=True)  
