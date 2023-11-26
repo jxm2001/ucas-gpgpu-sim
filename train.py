@@ -61,8 +61,8 @@ script_dir = os.path.dirname(__file__)  # 获取脚本所在的目录
 transform = transforms.Compose([transforms.ToTensor()])
 
 # 加载数据集
-trainset = torchvision.datasets.FashionMNIST(os.path.join(script_dir, '../data'), download=True, train=True, transform=transform)
-testset = torchvision.datasets.FashionMNIST(os.path.join(script_dir, '../data'), download=True, train=False, transform=transform)
+trainset = torchvision.datasets.FashionMNIST(os.path.join(script_dir, '../../data'), download=True, train=True, transform=transform)
+testset = torchvision.datasets.FashionMNIST(os.path.join(script_dir, '../../data'), download=True, train=False, transform=transform)
 
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=48, shuffle=True)
 testloader = torch.utils.data.DataLoader(testset, batch_size=1000, shuffle=False)
